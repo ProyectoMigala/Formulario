@@ -43,6 +43,10 @@ useHead({
   // ],
 });
 
+const people = ['Mexicana', 'Extranjera naturalizada', 'Extranjera']
+
+const selected = ref(people[0])
+
 const columns = reactive([
   {
     key: "name",
@@ -81,5 +85,20 @@ function upData() {
 
 <template>
   <main class="container mx-auto">
+    <UFormGroup label="¿Cómo te gustaría que nos refiramos a ti?" required>
+      <UInput placeholder="Rick, Dai, Pepe, etc..." icon="i-heroicons-envelope" />
+    </UFormGroup>
+    <UFormGroup label="Correo electrónico" required>
+      <UInput placeholder="tucorreo@email.com" icon="i-heroicons-envelope" />
+    </UFormGroup>
+    <UFormGroup label="Teléfono celular" required>
+      <UInput placeholder="5516432324" icon="i-heroicons-envelope" />
+    </UFormGroup>
+    <UFormGroup label="Fecha de nacimiento" required>
+      <UInput icon="i-heroicons-envelope" type="date" value="2000-01-01" />
+    </UFormGroup>
+    <UFormGroup label="¿Cuál es tu nacionalidad?" required>
+      <UInputMenu v-model="selected" :options="people" icon="i-heroicons-envelope" />
+    </UFormGroup>
   </main>
 </template>

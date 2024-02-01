@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   // devtools: { enabled: true },
   // target: 'static',
-  modules: ['@nuxthq/ui','@pinia/nuxt'],
+  modules: ['@nuxt/ui', '@pinia/nuxt'],
   pinia: {
     autoImports: [
       // automatically imports `defineStore`
