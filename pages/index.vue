@@ -95,21 +95,43 @@ function upData() {
     </div>
   </header>
   <main class="container mx-auto">
-    <UFormGroup label="¿Cómo te gustaría que nos refiramos a ti?" required>
-      <UInput placeholder="Rick, Dai, Pepe, etc..." icon="i-heroicons-envelope" />
-    </UFormGroup>
-    <UFormGroup label="Correo electrónico" required>
-      <UInput placeholder="tucorreo@email.com" icon="i-heroicons-envelope" />
-    </UFormGroup>
-    <UFormGroup label="Teléfono celular" required>
-      <UInput placeholder="5516432324" icon="i-heroicons-envelope" />
-    </UFormGroup>
-    <UFormGroup label="Fecha de nacimiento" required>
-      <UInput icon="i-heroicons-envelope" type="date" value="2000-01-01" />
-    </UFormGroup>
-    <UFormGroup label="¿Cuál es tu nacionalidad?" required>
-      <UInputMenu v-model="selected" :options="people" icon="i-heroicons-envelope" />
-    </UFormGroup>
+    <div>
+      <div class=" pt-20 pb-4">
+        <h3 class="text-[#5e1780] dark:text-[#d13ce3] text-3xl font-bold">Registro de participación</h3>
+      </div>
+    </div>
+    <div>
+      <div class="mt-8">
+        <div class="flex flex-wrap">
+          <div class="w-full flex-grow flex-shrink min-w-80">
+            <div class="overflow-auto box-border">
+              <render-markdown />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-h-8 pt-10 pb-4  text-right">
+        <input type="button" class="px-6 py-1 rounded-3xl bg-[#5e1780] dark:bg-[#d13ce3] text-sm font-bold cursor-pointer"
+          value="Siguiente">
+      </div>
+    </div>
+    <form class="hidden">
+      <UFormGroup label="¿Cómo te gustaría que nos refiramos a ti?" required>
+        <UInput placeholder="Rick, Dai, Pepe, etc..." icon="i-heroicons-envelope" />
+      </UFormGroup>
+      <UFormGroup label="Correo electrónico" required>
+        <UInput placeholder="tucorreo@email.com" icon="i-heroicons-envelope" />
+      </UFormGroup>
+      <UFormGroup label="Teléfono celular" required>
+        <UInput placeholder="5516432324" icon="i-heroicons-envelope" />
+      </UFormGroup>
+      <UFormGroup label="Fecha de nacimiento" required>
+        <UInput icon="i-heroicons-envelope" type="date" value="2000-01-01" />
+      </UFormGroup>
+      <UFormGroup label="¿Cuál es tu nacionalidad?" required>
+        <UInputMenu v-model="selected" :options="people" icon="i-heroicons-envelope" />
+      </UFormGroup>
+    </form>
   </main>
 </template>
 
