@@ -3,7 +3,9 @@ import { onMounted, computed } from 'vue'
 import survey from '../../assets/survey-structure.json'
 
 const route = useRoute();
+const router = useRouter();
 const pageNavbar = ref();
+const actualPage = survey.pages[2];
 
 onMounted(() => {
   console.log(pageNavbar.value)
@@ -15,22 +17,23 @@ onMounted(() => {
   })
 });
 
-const useChoices = (choices) => {
-  return choices.map((opt) => opt.text['es']);
-};
-
 async function onSubmit(event) {
-  // Do something with data
-  console.log(event.data)
+  console.log(state);
+
+  const page = Number(route.query.page);
+  if (page < survey.pages.length) {
+    router.push(`?page=${page + 1}`);
+  }
 }
 
 const state = reactive({});
-survey.pages[2].elements.forEach((el) => {
+actualPage.elements.forEach((el) => {
   state[el.name] = undefined;
 })
 </script>
 
 <template>
+  {{ $route.query.page }}
   <div ref="pageNavbar" class="overflow-x-auto">
     <ul class="flex flex-row justify-center gap-4 min-w-[900px] my-8 ">
       <li v-for="i in survey.pages.length"
@@ -40,18 +43,15 @@ survey.pages[2].elements.forEach((el) => {
       </li>
     </ul>
   </div>
-  <h1>{{ survey.pages[2].title.es }}</h1>
+  <h1>{{ actualPage.title.es }}</h1>
 
   <UForm :state="state" class="space-y-4" @submit="onSubmit">
-    <UFormGroup v-for="question in survey.pages[2].elements" :label="question.title['es']"
-      :required="question.isRequired">
-      <UInput v-if="question.type != 'radiogroup'" :placeholder="question.example['es']" icon="i-heroicons-envelope"
-        :type="question.type" v-model="state[question.name]" />
-      <UInputMenu v-else-if="question.type == 'radiogroup'" v-model="state[question.name]"
-        :options="useChoices(question.choices)" icon="i-heroicons-envelope" />
+
+    <UFormGroup v-for="question in actualPage.elements" :label="question.title['es']" :required="question.isRequired">
+      <dynamic-input :question="question" v-model:state="state[question.name]" />
     </UFormGroup>
     <UButton type="submit">
-      Submit
+      Siguiente sección
     </UButton>
   </UForm>
 </template>
