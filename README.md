@@ -8,6 +8,48 @@ Utilizando *Wayback Machine* se está trabajando en recrear la página original 
 
 Registro de participación
 
+Clasificación basada en los siguientes tipos de información 
+
+1. Confidencial: acceso restringido a la alta dirección.
+2. Restringido: directores de área y empleados clave tienen acceso.
+3. Interno: relativo a la información accesible solo los miembros de la organización, pero en cualquier nivel.
+4. Público: todas las personas, dentro y fuera de la organización, tienen acceso.
+
+
+| Pregunta | Clasificación | Proposito | Necesaría |
+| -------- | ------------- | --------- | --------- |
+| ¿Cómo te gustaría que nos refiramos a ti? |   |   |   |
+| Correo electrónico |   |   |   |
+| Teléfono celular |   |   |   |
+| Fecha de nacimiento |   |   |   |
+| ¿Cuál es tu nacionalidad? |   |   |   |
+| Ingresa tus nombres * |   |   |   |
+| Ingresa tu primer apellido * |   |   |   |
+| Ingresa tu segundo apellido * |   |   |   |
+| ¿Cuál es el género con el que te identificas? * |   |   |   |
+| ¿Tienes algún tipo de discapacidad? |   |   |   |
+| Ingresa tu Clave Unica de Registro Poblacional (CURP) * |   |   |   |
+| ¿En qué entidad federativa resides? * |   |   |   |
+| ¿En qué municipio o alcaldía vives?  * |   |   |   |
+| Ingresa tu clave de elector |   |   |   |
+| Sección Electoral * |   |   |   |
+| ¿Cuál es actualmente tu ocupación? * |   |   |   |
+| ¿Cuál es tu último grado de estudios? * |   |   |   |
+| ¿Trabajas en lo que estudiaste? * |   |   |   |
+| Especifica sobre tu formación, ¿En qué área te especializas? |   |   |   |
+| Específicamente ¿a qué te dedicas? * |   |   |   |
+| ¿En que actividades recreativas participas fuera de tu actividad laboral/formativa? |   |   |   |
+| ¿Puedes especificar qué actividad(es) realizas? |   |   |   |
+| ¿En qué tipo de actividades políticas y/o sociales has participado? |   |   |   |
+| Cuéntanos en qué tipo de actividades políticas y/o sociales has participado, por cuánto tiempo y haciendo qué. |   |   |   |
+| ¿Sabes algún oficio?, ¿Tienes otros conocimientos técnicos? Cuéntanos |   |   |   |
+| ¿Cómo te gustaría participar en este proyecto? * |   |   |   |
+| ¿A qué actividades podrías o te gustaría integrarte? * |   |   |   |
+| La forma de organización digital requiere que tengamos la capacidad para que estemos todos conectad@s ¿cuentas con lo siguiente? * |   |   |   |
+| ¿Qué tanto estás familiarizadx con el manejo de las tecnologías de la información? * |   |   |   |
+| ¿Cuáles de estas aplicaciones o redes de comunicación usas más? * |   |   |   |
+
+
 1. ¿Cómo te gustaría que nos refiramos a ti?
 2. Correo electrónico
 3. Teléfono celular
@@ -122,9 +164,7 @@ Disponibilidad, actividades de interés, etc
     - Labores administrativas
     - Trámites frente a gobierno
     - Otro
-29. Hagamos un ejercicio mental ¿Qué días y cuántas horas puedes dedicarle al proyecto?
-<!-- Sin tiempo disponible	1 a 3 hrs	4 a 6 hrs	6 a 8 hrs	8 o más hrs TABLA-->
-
+<!-- Se eliminó la sección 11 por irrelevante para el formulario-->
 30. La forma de organización digital requiere que tengamos la capacidad para que estemos todos conectad@s ¿cuentas con lo siguiente? *
     - Servicio de internet regular en casa
     - Servicio de datos móviles para vivienda
