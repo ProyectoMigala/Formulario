@@ -16,7 +16,7 @@ Clasificación basada en los siguientes tipos de información
 4. Público: todas las personas, dentro y fuera de la organización, tienen acceso.
 
 
-| Pregunta | Clasificación | Proposito | Necesaría |
+| Pregunta | Clasificación | Proposito | Necesaria |
 | -------- | ------------- | --------- | --------- |
 | ¿Cómo te gustaría que nos refiramos a ti? |   |   |   |
 | Correo electrónico |   |   |   |
