@@ -15,6 +15,7 @@ Clasificación basada en los siguientes tipos de información
 3. Interno: relativo a la información accesible solo los miembros de la organización, pero en cualquier nivel.
 4. Público: todas las personas, dentro y fuera de la organización, tienen acceso.
 
+* Campos no obligatorios
 
 | Pregunta | Clasificación | Proposito | Necesaria |
 | -------- | ------------- | --------- | --------- |
