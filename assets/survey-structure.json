@@ -428,7 +428,7 @@
           "maxSelectedChoices": 3
         },
         {
-          "type": "radiogroup",
+          "type": "dropdown",
           "name": "grado_estudios",
           "title": {
             "es": "¿Cuál es tu último grado de estudios?"
@@ -516,6 +516,7 @@
           "description": {
             "es": "Tu puesto de trabajo, tiempo de experiencia, el giro de tu negocio o si eres estudiante o estás desempleado, ejemplo: \"Reclutador de personal\", \"Tele-operador\", \"desarrollador de software freelance\", \"4 años de experiencia\" \"estudiante de secundaria\", \"Estudiante de ingeniería\", \"Desempleado\". etc\n\n"
           },
+          "example": "",
           "isRequired": true
         },
         {
@@ -552,7 +553,10 @@
               },
               "enableIf": "{actividades_recreativas} notempty"
             }
-          ]
+          ],
+          "title": {
+            "es": "¿En que actividades recreativas participas fuera de tu actividad laboral/formativa? Puedes seleccionar hasta tres casillas"
+          }
         }
       ],
       "title": {
@@ -598,7 +602,10 @@
               },
               "enableIf": "{actividades_politicas_sociales} notempty"
             }
-          ]
+          ],
+          "title": {
+            "es": "Formación y ocupación"
+          }
         }
       ],
       "title": {
@@ -613,7 +620,8 @@
           "name": "oficio_conocimientos_tecnicos",
           "title": {
             "es": "¿Sabes algún oficio?, ¿Tienes otros conocimientos técnicos? cuéntanos"
-          }
+          },
+          "example": ""
         }
       ],
       "title": {
