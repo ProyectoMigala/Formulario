@@ -1,11 +1,12 @@
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, watch } from 'vue'
 import survey from '../../assets/survey-structure.json'
 
 const route = useRoute();
 const router = useRouter();
 const pageNavbar = ref();
-const actualPage = survey.pages[2];
+const actualPage = survey.pages;
+const page = ref(Number(route.query.page) - 1);
 
 onMounted(() => {
   console.log(pageNavbar.value)
@@ -20,16 +21,22 @@ onMounted(() => {
 async function onSubmit(event) {
   console.log(state);
 
-  const page = Number(route.query.page);
-  if (page < survey.pages.length) {
-    router.push(`?page=${page + 1}`);
+
+  if ((page.value + 1) < survey.pages.length) {
+    page.value++
+    router.push(`?page=${page.value + 1}`);
   }
 }
 
 const state = reactive({});
-actualPage.elements.forEach((el) => {
-  state[el.name] = undefined;
-})
+
+watch(page, async (newQuestion, oldQuestion) => {
+  console.log('Quest', newQuestion)
+
+  actualPage[page.value].elements.forEach((el) => {
+    state[el.name] = undefined;
+  });
+});
 </script>
 
 <template>
@@ -43,11 +50,12 @@ actualPage.elements.forEach((el) => {
       </li>
     </ul>
   </div>
-  <h1>{{ actualPage.title.es }}</h1>
+  <h1>{{ actualPage[page].title.es }}</h1>
 
   <UForm :state="state" class="space-y-4" @submit="onSubmit">
 
-    <UFormGroup v-for="question in actualPage.elements" :label="question.title['es']" :required="question.isRequired">
+    <UFormGroup v-for="question in actualPage[page].elements" :label="question.title['es']"
+      :required="question.isRequired">
       <dynamic-input :question="question" v-model:state="state[question.name]" />
     </UFormGroup>
     <UButton type="submit">
