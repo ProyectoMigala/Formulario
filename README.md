@@ -2,21 +2,38 @@
 
 Utilizando *Wayback Machine* se está trabajando en recrear la página original de registro de participantes.
 
-## Preguntas
+Listado de todas las preguntas que se encontraban en el viejo formulario, todas las preguntas que tengan un * a un costado son obligatorias.
+
+Actualmente estamos tratando de clasificar las preguntas, su propósito y necesidad, para Proyecto Migala.
+
+## Formato de clasificación de las preguntas - Propuesta de Kevin
 
 ### Datos personales específicos
 
 Registro de participación
 
-Clasificación basada en los siguientes tipos de información 
+**Clasificación basada en los siguientes tipos de información**
 
 1. Confidencial: acceso restringido a la alta dirección.
 2. Restringido: directores de área y empleados clave tienen acceso.
 3. Interno: relativo a la información accesible solo los miembros de la organización, pero en cualquier nivel.
 4. Público: todas las personas, dentro y fuera de la organización, tienen acceso.
 
+**Propósito basada en los siguientes tipos de información**
 
-| Pregunta | Clasificación | Proposito | Necesaria |
+1. Comunicación: Para enviar y recibir información del PM.
+2. Estadísticas internas: Para conocer el estado actual de los miembros del PM.
+3. Consolidación del partido: Información necesaria para afiliar a los miembros, una vez formado el partido.
+4. Comunicación y estadísticas. 
+
+**Necesaria basada en los siguientes tipos de información**
+
+1. Sí, obligatoria
+2. Sí, pero no obligatoria
+3. No
+4. No estoy seguro: Puede ser porque es necesario que PM se encuentre en cierta etapa, o considero que debe cambiar por algún motivo.
+
+| Pregunta | Clasificación | Propósito | Necesaria |
 | -------- | ------------- | --------- | --------- |
 | ¿Cómo te gustaría que nos refiramos a ti? |   |   |   |
 | Correo electrónico |   |   |   |
@@ -49,6 +66,11 @@ Clasificación basada en los siguientes tipos de información
 | ¿Qué tanto estás familiarizadx con el manejo de las tecnologías de la información? * |   |   |   |
 | ¿Cuáles de estas aplicaciones o redes de comunicación usas más? * |   |   |   |
 
+## Propuestas de clasificación
+
+- Kevin: [doc](https://docs.google.com/document/d/1qJOXu-AWf1wUOdsOu4kKyb5wHwbhTL-9W-L1Bc2piDE/edit?usp=sharing)
+
+## Preguntas
 
 1. ¿Cómo te gustaría que nos refiramos a ti?
 2. Correo electrónico
